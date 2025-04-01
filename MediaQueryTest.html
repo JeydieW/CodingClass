@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New HTML File</title>
+    <style>
+        /* internal CSS for styling the page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            animation: backgroundCycle 6s infinite; /* Default animation */
+        }
+        
+         /* Define the animation */
+         @keyframes backgroundCycle {
+            0% {
+                background-color: red;
+            }
+            33% {
+                background-color: blue;
+            }
+            66% {
+                background-color: green;
+            }
+            100% {
+                background-color: red; /* Loop back to the first color */
+            }
+        }
+        @media (max-width: 600px) {
+            body {
+                animation: backgroundCycle 3s infinite; /* Faster animation for small screens */
+            }
+        }
+    </style>
+</head>
+</body>
+</html>
+<h1>My Page</h1>
+<p>Media Query test page</p>
